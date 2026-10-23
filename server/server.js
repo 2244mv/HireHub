@@ -16,10 +16,7 @@ const app = express();
 
 // 1. Global middleware
 app.use(
-  cors({
-    origin: process.env.CLIENT_URL,
-    credentials: true,
-  }),
+  cors({origin:"*"}),
 );
 
 app.use(express.json());
